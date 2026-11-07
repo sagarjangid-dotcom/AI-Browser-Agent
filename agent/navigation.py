@@ -23,7 +23,8 @@ def run_browser_task(command, on_log=None):
             if not query:
                 raise ValueError("Search query is empty.")
 
-            url = "https://www.google.com/search?q=" + quote(query)
+            url = f"https://html.duckduckgo.com/html/?q={quote(query)}"
+
 
         elif command.lower().startswith("open "):
 
