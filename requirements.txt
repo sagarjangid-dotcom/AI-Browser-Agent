@@ -1,0 +1,10 @@
+
+streamlit
+fastapi
+uvicorn
+playwright
+google-genai
+pandas
+openpyxl
+beautifulsoup4
+python-dotenv

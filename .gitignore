@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Secrets
+.env
+.env.*
+
+# Generated files
+outputs/*.xlsx
+outputs/*.csv
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Editor and OS
+.vscode/
+.DS_Store
+Thumbs.db
+venv/
+venv_old/
+.env
+__pycache__/
+outputs/*.xlsx
+outputs/*.csv
