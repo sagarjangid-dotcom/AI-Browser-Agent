@@ -8,7 +8,7 @@ try:
     with sync_playwright() as p:
         print("3. Playwright started!", flush=True)
 
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         print("4. Browser launched!", flush=True)
 
         browser.close()

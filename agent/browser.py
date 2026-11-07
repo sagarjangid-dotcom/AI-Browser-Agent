@@ -3,7 +3,7 @@ from playwright.sync_api import sync_playwright
 
 def open_website(url):
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         page = browser.new_page()
 
         page.goto(url, wait_until="domcontentloaded")
@@ -16,7 +16,7 @@ def open_website(url):
 
 def search_google(query):
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         page = browser.new_page()
 
         print("Opening Google...")
