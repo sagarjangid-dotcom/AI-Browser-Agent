@@ -62,7 +62,7 @@ def fill_web_form(url, form_data, on_log=None):
         playwright = sync_playwright().start()
 
         browser = playwright.chromium.launch(
-            headless=False
+            headless=True
         )
 
         page = browser.new_page()
